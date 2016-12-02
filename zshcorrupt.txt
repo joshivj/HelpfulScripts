@@ -1,0 +1,6 @@
+# to fix zsh: corrupt history file /home/xxxx/.zsh_history issue on ubuntu
+
+# Ubuntu commands
+mv .zsh_history .zsh_history_bad
+strings .zsh_history_bad > .zsh_history
+fc -R .zsh_history
